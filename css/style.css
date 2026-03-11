@@ -1,5 +1,67 @@
-body,ul{
-    margin: 0;
+
+
+.normal{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 1fr 1fr 6vh;
+    grid-template-areas: 
+    'hd hd'
+    'as as'
+    'ma ma'
+    'fo fo';
+    column-gap: 5px;
+    background-color: lightgray;
+
+}
+
+.showcase{
+    height: 100vh;
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: 10vh auto 7vh;
+    grid-template-areas: 
+    'hd hd'
+    'se se'
+    'fo fo'
+    ;
+    column-gap: 5px;
+    background-color: lightgray;
+
+}
+
+header{
+    display: flex;
+    grid-area: hd;
+    background-color: gainsboro;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer{
+    display: flex;
+    grid-area: fo;
+    background-color: gainsboro;
+
+}
+      
+aside{
+    display: flex;
+    grid-area: as;
+    background-color: white;
+}
+
+main{
+    display: flex;
+    grid-area: ma;
+    background-color: white;
+}
+
+
+section{
+    display: flex;
+    grid-area: se;
+    background-color: white;
 }
 
 .menu{
@@ -20,7 +82,7 @@ body,ul{
 }
 
 .menu-button i.material-icons{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .show{
