@@ -18,13 +18,14 @@
 .showcase{
     height: 100vh;
     display: grid;
-    grid-template-columns:1fr 1fr ;
-    grid-template-rows: 10vh auto 7vh;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows: 10vh auto auto auto 7vh;
     grid-template-areas: 
-    'hd hd'
-    'se se'
-    'fo fo'
-    ;
+    'hd hd hd hd'
+    'se se se se'
+    'se se se se'
+    'se se se se'
+    'fo fo fo fo';
     column-gap: 5px;
     background-color: lightgray;
 
@@ -59,10 +60,13 @@ main{
 
 
 section{
-    display: flex;
+    display: grid;
     grid-area: se;
     background-color: white;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
+
 
 .menu{
     height: 100vh;
