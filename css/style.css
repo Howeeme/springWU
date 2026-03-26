@@ -1,5 +1,5 @@
 
-
+/* generell kod */
 .normal{
     height: 100vh;
     display: grid;
@@ -108,4 +108,52 @@ section{
     display: block;
 }
 
+/* mobil */
+@media screen and (max-width:500px) {
+
+    .showcase{
+    height: 300vh;
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: 10vh auto auto auto auto auto auto 7vh;
+    grid-template-areas: 
+    'hd hd'
+    'se se'
+    'se se'
+    'se se'
+    'se se'
+    'se se'
+    'se se'
+    'fo fo';
+    column-gap: 5px;
+    background-color: lightgray;
+
+}
+}
+
+
+
+
+
+
+/* desktop */
+
+@media screen and (min-width:501px) {
+
+    .showcase{
+    height: 100vh;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows: 10vh auto auto auto 7vh;
+    grid-template-areas: 
+    'hd hd hd hd'
+    'se se se se'
+    'se se se se'
+    'se se se se'
+    'fo fo fo fo';
+    column-gap: 5px;
+    background-color: lightgray;
+
+}
+}
 
