@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="normal">
-    
-   <nav class="menu">
+
+    <nav class="menu">
         <ul>
             <li><a href="Legions.html">Legions</a></li>
             <li><a href="enemies.html">Enemies</a></li>
@@ -20,8 +22,7 @@
 
     <header>
         <div class="menu-button" onclick="showMenu()">
-            <i class="material-icons">menu</i> (byt till en bild)
-        </div>
+            <i class="material-icons"><img src="img/menu.png" alt="menu" style="width: 40px;"></i>
     </header>
 
 
@@ -31,13 +32,39 @@
 
 
     <main>
-        <p>Join the boys in white!</p> mitten topp
+        <p>Join the boys in white!</p><!--mitten topp-->
 
-        <h2>Full name <input type="text" placeholder="search"></h2>
-        <h2>Contact info <input type="text" placeholder="search"></h2>
-        <h2>species<input type="text" placeholder="search"></h2>
-        <h4>I am over the legal age for my species</h4>
-        <h4>I aggre to the following terms and services</h4>
+        <label for="Fname">First name:</label>
+        <input type="text" id="input" name="Fname">
+        <label for="Lname">Last name:</label>
+        <input type="text" id="input" name="Lname">
+        <input type="submit" id="input" value="submit">
+
+        <label for="contact">Contact info:</label>
+        <input type="text" id="input" name="contact">
+
+        <select name="Species" id="input">
+            <option selected>Human</option>
+            <option>twilek</option>
+            <option>Torguta</option>
+            <option>Mon calamari</option>
+            <option>Zabrak</option>
+            <option>Tholothian</option>
+            <option>Pantoran</option>
+            <option>Mirialan</option>
+            <option>Duros</option>
+            <option>Nautolan</option>
+            <option>Rodian</option>
+            <option>Lasat</option>
+            <option>Ugnaught</option>
+        </select>
+
+        <label for="age">I am over the age of consent for my species</label>
+        <input type="radio" id="input" name="Age">
+
+        <label for="terms and conditions">I agree to the terms and conditions</label>
+        <input type="radio" id="input" name="consent">
+
         <!-- Boxar att checka för de 2 sista, gör så det ser mer legit ut. Om det finns en scroll sak, 
         ta den för species frågan istället för att skriva sin egen-->
         <!-- kansek lägg till aurebesh för att göra så det ser coolare ut-->
@@ -46,10 +73,12 @@
 
 
     <footer>
-        <p>conact the coruscant guard here</p> <p>Holomail: </p> <!-- FIxa så det e arebesh nummer-->
+        <p>conact the coruscant guard here</p>
+        <p>Holomail: </p> <!-- FIxa så det e arebesh nummer-->
 
     </footer>
 
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
-</html>
+
+</html

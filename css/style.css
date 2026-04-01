@@ -54,8 +54,14 @@ aside{
 
 main{
     display: flex;
+    flex-direction: column;
+
     grid-area: ma;
     background-color: white;
+}
+
+#input{
+  align-self: flex-start;  
 }
 
 
