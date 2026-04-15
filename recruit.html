@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,22 +11,25 @@
 
     <nav class="menu">
         <ul>
-            <li><a href="Legions.html">Legions</a></li>
-            <li><a href="enemies.html">Enemies</a></li>
-            <li><a href="index.html">Information</a></li>
+            <li><a class="menu-items"  href="Legions.html">Legions</a></li>
+            <li><a class="menu-items"  href="enemies.html">Enemies</a></li>
+            <li><a class="menu-items"  href="index.html">Information</a></li>
         </ul>
     </nav>
     <div class="fade-layer" onclick="showMenu()"></div>
 
 
     <header>
+        <div>
+            <i>GAR bild</i>
+        </div>
         <div class="menu-button" onclick="showMenu()">
             <i class="material-icons"><img src="img/menu.png" alt="menu" style="width: 40px;"></i>
     </header>
 
 
     <aside>
-        <p>propaganda</p>
+        <p class="text">propaganda</p>
     </aside>
 
 
@@ -38,7 +40,6 @@
         <input type="text" id="input" name="Fname">
         <label for="Lname">Last name:</label>
         <input type="text" id="input" name="Lname">
-        <input type="submit" id="input" value="submit">
 
         <label for="contact">Contact info:</label>
         <input type="text" id="input" name="contact">
@@ -65,6 +66,8 @@
         <label for="terms and conditions">I agree to the terms and conditions</label>
         <input type="radio" id="input" name="consent">
 
+        <input type="submit" id="input" value="submit">
+
         <!-- Boxar att checka för de 2 sista, gör så det ser mer legit ut. Om det finns en scroll sak, 
         ta den för species frågan istället för att skriva sin egen-->
         <!-- kansek lägg till aurebesh för att göra så det ser coolare ut-->
@@ -73,8 +76,8 @@
 
 
     <footer>
-        <p>conact the coruscant guard here</p>
-        <p>Holomail: </p> <!-- FIxa så det e arebesh nummer-->
+        <p class="left">conact the coruscant guard here</p>
+        <p class="right">Holomail: </p> <!-- FIxa så det e arebesh nummer-->
 
     </footer>
 
