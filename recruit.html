@@ -8,43 +8,43 @@
 </head>
 
 <body class="normal">
-
     <nav class="menu">
         <ul>
+            <li><a class="menu-items"  href="index.html">Information</a></li>
             <li><a class="menu-items"  href="Legions.html">Legions</a></li>
             <li><a class="menu-items"  href="enemies.html">Enemies</a></li>
-            <li><a class="menu-items"  href="index.html">Information</a></li>
+            <li><a class="menu-items"  href="recruit.html">Recruitment</a></li>
         </ul>
     </nav>
     <div class="fade-layer" onclick="showMenu()"></div>
 
-
     <header>
         <div>
-            <i>GAR bild</i>
+            <i><img src="img/Republic_Emblem.gif" alt="GAR_emblem" style="width: 50px; margin-left: 5px">Grand Army of The Republic</i>
         </div>
         <div class="menu-button" onclick="showMenu()">
-            <i class="material-icons"><img src="img/menu.png" alt="menu" style="width: 40px;"></i>
+            <i><img src="img/menu.png" alt="menu" style="width: 40px; margin-right: 10px;"></i>
+        </div>
     </header>
 
 
     <aside>
-        <p class="text">propaganda</p>
+        <img src="" alt="propaganda" class="propaganda">
     </aside>
 
 
-    <main>
-        <p>Join the boys in white!</p><!--mitten topp-->
+    <main class="input">
+        <h1 class="text"><strong>Join the boys in white!</strong></h1> <!--mitten topp-->
 
         <label for="Fname">First name:</label>
-        <input type="text" id="input" name="Fname">
+        <input type="text" name="Fname"> <br>
         <label for="Lname">Last name:</label>
-        <input type="text" id="input" name="Lname">
+        <input type="text" name="Lname"> <br>
 
         <label for="contact">Contact info:</label>
-        <input type="text" id="input" name="contact">
+        <input type="text" name="contact"> <br>
 
-        <select name="Species" id="input">
+        <select name="Species"> 
             <option selected>Human</option>
             <option>twilek</option>
             <option>Torguta</option>
@@ -58,30 +58,26 @@
             <option>Rodian</option>
             <option>Lasat</option>
             <option>Ugnaught</option>
-        </select>
+        </select> <br>
 
-        <label for="age">I am over the age of consent for my species</label>
-        <input type="radio" id="input" name="Age">
+        <label for="age" class="text">I am over the age of consent for my species</label>
+        <input type="radio" name="age"> <br>
 
-        <label for="terms and conditions">I agree to the terms and conditions</label>
-        <input type="radio" id="input" name="consent">
+        <label for="terms-and-conditions" class="text">I agree to the terms and conditions</label>
+        <input type="radio" name="consent"> <br> <br>
 
-        <input type="submit" id="input" value="submit">
-
-        <!-- Boxar att checka för de 2 sista, gör så det ser mer legit ut. Om det finns en scroll sak, 
-        ta den för species frågan istället för att skriva sin egen-->
-        <!-- kansek lägg till aurebesh för att göra så det ser coolare ut-->
+        <input type="button" value="submit" onclick="alert('Your request has been submited')"> <br>
 
     </main>
 
 
     <footer>
         <p class="left">conact the coruscant guard here</p>
-        <p class="right">Holomail: </p> <!-- FIxa så det e arebesh nummer-->
+        <p class="right">Holomail: xxxxxxxx</p>
 
     </footer>
 
     <script src="js/main.js"></script>
 </body>
 
-</html
+</html>

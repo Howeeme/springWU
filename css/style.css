@@ -4,7 +4,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10vh 1fr 1fr 6vh;
+    grid-template-rows: 10vh 1fr auto 6vh;
     grid-template-areas: 
     'hd hd'
     'as as'
@@ -14,7 +14,6 @@
     background-color: lightgray;
 
 }
-
 .showcase{
     height: 100vh;
     display: grid;
@@ -31,40 +30,36 @@
 
 }
 
+/* rgb(8, 91, 192) */
+
 header{
     display: flex;
     align-items: center;
     grid-area: hd;
-    background-color: gainsboro;
-    grid-template-columns:'hd hd hd hd';
+    background-color: #dcdcdc;
     justify-content: space-between;
 }
-
-
 footer{
     display: flex;
     grid-area: fo;
-    background-color: gainsboro;
+    background-color: rgb(220, 220, 220);
     justify-content: space-between;
 
-}
-      
+}    
 aside{
-    display: flex;
     grid-area: as;
-    background-color: white;
+    background-color: #ffffff;
 }
-
 main{
     display: flex;
     flex-direction: column;
+    justify-items: center;
     grid-area: ma;
     background-color: white;
 }
 
-#input{
-  align-self: flex-start;  
-}
+
+
 
 .menu{
     height: 100vh;
@@ -77,26 +72,21 @@ main{
     box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
     z-index: 10;
 }
-
 .menu-button{
     cursor: pointer;
     display: inline;
 }
-
 .menu-button i.material-icons{
     font-size: 1.5rem;
 }
-
 .menu-items{
     font-size: 35px;
     color: black;
     text-decoration: none;
 }
-
 .show{
     right: 0;
 }
-
 .fade-layer{
     position: fixed;
     top: 0;
@@ -107,15 +97,37 @@ main{
     display: none;
     z-index: 5;
 }
-
 .fade-layer.visible{
     display: block;
 }
 
-.showcase-text{
+
+
+.text{
     display: grid;
-    align-content: center;
     justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+
+.battalion-sigil{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.droid-image{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.propaganda{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
 
 
@@ -123,7 +135,7 @@ main{
 @media screen and (max-width:500px) {
 
     .showcase{
-    height: 284vh;
+    height: 300vh;
     display: grid;
     grid-template-columns:1fr 1fr ;
     grid-template-rows: 10vh auto auto auto auto auto auto 7vh;
@@ -144,6 +156,21 @@ main{
     width: 192px;
     }
 
+    .droid{
+    width: 192px;
+    }
+
+    .propaganda{
+        width: 300px ;
+    }
+
+    .input{
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 2rem;
+    }
+
     
     section{
     display: grid;
@@ -151,13 +178,9 @@ main{
     background-color: white;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    height: 183vh;
+    height: auto;
 }
-
 }
-
-
-
 
 
 
@@ -182,6 +205,21 @@ main{
 
     .battalion{
         width: 200px;
+    }
+
+    .droid{
+        width: 200px;
+    }
+
+    .propaganda{
+        width: 800px;
+    }
+
+    .input{
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 2rem;
     }
 
     section{

@@ -7,3 +7,11 @@ function showMenu(){
 
 }
 
+const images = [
+  "img/sw-propaganda.jpg",
+  "img/sw-propaganda2.jpg",
+  "img/sw-propaganda3.jpg",
+];
+
+const random = images[Math.floor(Math.random() * images.length)];
+document.querySelector(".propaganda").src = random;
